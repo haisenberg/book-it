@@ -10,7 +10,6 @@ echo "
  Developper : github.com/haisenberg                                                                                                 
 "
 
-while true; do
     echo -en "\n Pentesting & Programming Book Finder  \n\n1) Pentesting\n2) Programming\n3) Exit\n\nYour choice : "
     read type
     case $type in
