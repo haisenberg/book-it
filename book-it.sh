@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "
 ██████╗  ██████╗  ██████╗ ██╗  ██╗     ██╗████████╗
@@ -9,6 +9,8 @@ echo "
 ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝     ╚═╝   ╚═╝
  Developper : github.com/haisenberg                                                                                                 
 "
+    echo -e "Check depend: firefox.."
+    [ $(command -v firefox) ] && echo "[OK]" || { echo -e "[NOT FOUND!]\n please install the 'firefox' package before use it." ; exit 1 ; }
 
     echo -en "\n Pentesting & Programming Book Finder  \n\n1) Pentesting\n2) Programming\n3) Exit\n\nYour choice : "
     read type
@@ -104,9 +106,3 @@ echo "
  
     esac
 done
-
-
-
-
-
-
